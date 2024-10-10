@@ -20,9 +20,8 @@ window.onload = function() {
   const paloAbajo = document.querySelector("#paloAbajo"); // almacena lo q va a haber dentro del palo abajo
   const numeros = document.querySelector("#numero"); // alamcena lo q va a haber dentro del palo abajo
   const boton = document.querySelector("#boton"); // almacena el botón
-  let intervaloId = 0;
+  let intervaloId = null;
   const countDown = document.querySelector("#cuentaAtras1");
-  console.log(countDown);
 
   const nuevaCarta = () => {
     const paloAleatorio =
@@ -51,7 +50,7 @@ window.onload = function() {
   boton.addEventListener("click", nuevaCarta);
 
   function nuevoIntervalo() {
-    let contador = 10;
+    let contador = 11;
 
     let cuentaAtras = setInterval(function() {
       if (contador === 0) {
@@ -59,11 +58,9 @@ window.onload = function() {
         nuevaCarta();
       } else {
         contador--;
-        countDown.textContent = contador;
+        countDown.innerHTML = `<p class = "cuentaAtras text-white mt-5 d-flex justify-content-center">${contador}</p> `;
       }
     }, 1000);
-
-    countDown.innerHTML = `<p class="cuentaAtras text-white mt-5 d-flex justify-content-center"></p> `;
 
     return cuentaAtras;
   }
