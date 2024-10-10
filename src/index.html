@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hello Rigo with Vanilla.js</title>
+    <title>Random Cards</title>
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
@@ -13,17 +13,42 @@
     <link rel="shortcut icon" href="./4geeks.ico" />
   </head>
   <body>
-    <div class="container-fluid text-center">
-      <h1 class="mt-5">Hello Rigo!</h1>
-      <img src="./rigo-baby.jpg" />
-      <p class="alert alert-warning mt-4">
-        If this text is <b>not</b> centered and <b>yellow</b>, you probably have
-        an error
-      </p>
-      <div class="fixed-bottom p-4">
-        Made with ❤️ by
-        <a href="https://www.4geeksacademy.com">4Geeks Academy</a>
+    <div class="container d-flex justify-content-center">
+      <div class="tablero" style="padding: 100px 200px 200px 200px ">
+        <div class="card" id="card" style="width: 300px; height: 450px;">
+          <p
+            class="paloArriba ms-3 mb-auto position-absolute top-0 start-0"
+            id="paloArriba"
+          >
+            ♥
+          </p>
+          <p
+            class="numero d-flex justify-content-center align-items-center m-auto"
+            id="numero"
+          >
+            A
+          </p>
+          <p
+            class="paloAbajo  me-3 m-auto  position-absolute bottom-0 end-0"
+            id="paloAbajo"
+          >
+            ♥
+          </p>
+        </div>
+        <div class="d-flex justify-content-center pt-5">
+          <button type="button" class="btn btn-success" id="boton">
+            Nueva Carta
+          </button>
+        </div>
+        <div id="cuentaAtras1">
+          <!-- <p
+            id="cuentaAtras1"
+            class="cuentaAtras text-white mt-5 d-flex justify-content-center"
+          ></p> -->
+        </div>
       </div>
     </div>
+
+    <script></script>
   </body>
 </html>

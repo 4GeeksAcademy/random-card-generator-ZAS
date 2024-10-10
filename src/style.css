@@ -1,1 +1,30 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
+body {
+  background-color: black;
+  font-family: "Times New Roman", Times, serif;
+}
+.card {
+  border-radius: 15px;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.53);
+}
+
+.paloArriba {
+  font-size: 80px;
+}
+.paloAbajo {
+  font-size: 80px;
+  transform: rotate(180deg);
+}
+
+.numero {
+  font-size: 180px;
+}
+.tablero {
+  background-image: url("https://media.istockphoto.com/id/1206505233/vector/poker-table-background-in-green-color.jpg?s=612x612&w=0&k=20&c=1-WRVj64dMfBuLFHjm08rCi3jsEa-7NGZwOhxBlyUdY=");
+  background-size: cover;
+}
+
+.cuentaAtras {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 50px;
+}
